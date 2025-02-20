@@ -1,172 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>某某某官网</title>
-    <meta name="description" content="Re01 编程课的Flex布局演示。" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <style>
-      body {
-        margin: 0;
-        /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
-        height: 100vh;
-        background-color: #eee;
-      }
-      /* * {
-        border: 1px solid #333;
-      } */
-      .flex {
-        display: flex;
-      }
-      /* 占满比例 */
-      .flex1 {
-        flex: 1;
-      }
-      /* 竖向 */
-      .column {
-        flex-direction: column;
-      }
-      /* 阴影 */
-      .yinYing {
-        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-      }
-      /* 白色背景 */
-      .baiSe {
-        background-color: #fff;
-      }
-      /* 上下左右外边距 */
-      .mg8 {
-        margin: 8px;
-      }
-      /* 右外边距 */
-      .mgr8 {
-        margin-right: 8px;
-      }
-      /* 上外边距 */
-      .mgt8 {
-        margin-top: 8px;
-      }
-      /* 四个小盒子 */
-      .shuJu {
-        height: 100px;
-      }
-      /* 中间的大盒子 */
-      .lieBiaoXiang {
-        height: 160px;
-      }
-      /* 导航条 */
-      .daoHang {
-        padding: 10px 20px;
-        border-bottom: 1px solid rgb(201, 201, 201);
-        font-size: 14px;
-        color: #666;
-      }
-      .neiRong::-webkit-scrollbar {
-        display: none; /* Chrome Safari */
-      }
-
-      /* 当屏幕宽度小于600px时要改变的css */
-      @media (max-width: 600px) {
-        /* 小屏幕上取消侧边栏，后面学js时会教怎么弹出 */
-        .ceBian {
-          display: none;
-        }
-        /* 内容栏和数据栏flex方向改为竖向 */
-        .neiRong {
-          flex-direction: column;
-        }
-        .shuJuQu {
-          flex-direction: column;
-        }
-        /* 右区加左外边距 */
-        .youQu {
-          margin-left: 8px;
-        }
-        /* 数据块外边距，大小改为自动宽高 */
-        .shuJu {
-          margin: 0 0 8px;
-          flex: auto;
-        }
-      }
-    </style>
-  </head>
-  <body class="flex">
-    <!-- 侧边栏 -->
-    <div
-      style="width: 200px; z-index: 3"
-      class="ceBian flex column baiSe yinYing"
-    >
-      <!-- 侧边头像栏 -->
-      <div
-        style="
-          padding: 10px;
-          align-items: center;
-          justify-content: center;
-          border-bottom: 1px solid #999;
-        "
-        class="flex"
-      >
-        <img
-          alt="logo"
-          src=""
-          width="40px"
-          height="40px"
-        />
-        <div style="margin-left: 10px">某某某官网</div>
-      </div>
-      <!-- 导航栏 -->
-      <div class="flex1">
-        <div class="daoHang">导航1</div>
-        <div class="daoHang">导航2</div>
-        <div class="daoHang">导航3</div>
-        <div class="daoHang">导航4</div>
-        <div class="daoHang">导航5</div>
-      </div>
-    </div>
-    <!-- 主区域 -->
-    <div class="flex flex1 column">
-      <!-- 头部栏 -->
-      <div style="height: 60px; z-index: 2" class="baiSe yinYing"></div>
-      <!-- 内容区 -->
-      <div class="flex flex1 neiRong" style="overflow: auto">
-        <!-- 左区 -->
-        <div style="flex: 3" class="flex column mg8">
-          <!-- 数据区 -->
-          <div class="flex shuJuQu">
-            <!-- 四个小块显示重点数据 -->
-            <div class="shuJu baiSe yinYing flex1 mgr8"></div>
-            <div class="shuJu baiSe yinYing flex1 mgr8"></div>
-            <div class="shuJu baiSe yinYing flex1 mgr8"></div>
-            <div class="shuJu baiSe yinYing flex1"></div>
-          </div>
-          <!-- 列表区，列表数据可以无限增加 -->
-          <div class="flex column">
-            <!-- 列表项 -->
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赣南橙源直通网</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">赣南橙源直通网 </a>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#projects">项目</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- 右区 -->
-        <div style="flex: 1" class="youQu flex column mgr8 mgt8">
-          <!-- 提示区 -->
-          <div style="height: 150px" class="baiSe yinYing"></div>
-          <!-- 消息区 -->
-          <div style="height: 300px" class="mgt8 baiSe yinYing"></div>
+    </header>
+ 
+    <!-- 主内容区域 -->
+    <main class="container">
+        <section id="home" class="section">
+        </section>
+ 
+        <!-- 其他部分可以按需添加 -->
+        <!-- 卡片内容 -->
+        <div class="card" onclick="window.location.href='https://github.com/TseYatSing/Tse-Arm'">
+            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.73479d6c5bbbed2ce60462949ff1a4e9?rik=C0QMTXU%2fkvyJ7g&riu=http%3a%2f%2fn.sinaimg.cn%2ftranslate%2f155%2fw1080h675%2f20191008%2fe61c-ifrwayw6578042.jpg&ehk=ppX8g5mQNdljBs1VlSu2Tsz45pnsS4%2faS4wLQl%2f0btk%3d&risl=&pid=ImgRaw&r=0" alt="1">
+            <div class="card-content">
+                <h2>1</h2>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="container">
+        <div class="card" onclick="window.location.href='https://github.com/TseYatSing/Tse-ARglasses'">
+            <img src="https://ts1.cn.mm.bing.net/th/id/R-C.977a1180348d714f4f1887d563c08c37?rik=igHlUsPXWPiwpw&riu=http%3a%2f%2fmall7.qiyipic.com%2fimage%2f20151228%2f32%2fef%2fmall_2653945_1451284908620_1x1.jpg&ehk=CygiYYukFdyUuVsetDc9A2BwFGAUO59Gi1RC4HOXM5s%3d&risl=&pid=ImgRaw&r=0" alt="2">
+            <div class="2">
+                <h2>2</h2>
+            </div>
+        </div>
+        <div class="card" onclick="window.location.href='https://github.com/TseYatSing/CitriBot'">
+            <img src="https://pic.nximg.cn/file/20230613/31456569_143037140124_2.jpg" alt="3">
+            <div class="card-content">
+                <h2>3</h2>
+            </div>
+        <!-- 添加更多卡片 -->
+    </main>
+ 
+    <!-- 页脚（可选） -->
+    <footer class="footer">
+        <p>&copy; 2025 TSE. 保留所有权利。</p>
+    </footer>
+</body>
 </html>
