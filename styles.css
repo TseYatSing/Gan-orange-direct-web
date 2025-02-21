@@ -46,7 +46,7 @@ body, html {
     text-align: left; /* 确保内容靠左对齐 */
     width: 100%;
     max-width: 800px;
-    padding: 20px;/* 可以根据需要调整内边距 */
+    padding: 300px 200px; /* 减少了内边距以适应左对齐，但您可以根据需要调整 */
     border-radius: 10px;
     opacity: 0; /* 初始透明度为0 */
     transform: translateY(50px); /* 初始位置在视口下方 */
@@ -71,7 +71,21 @@ body, html {
     color: #ffffff;
 }
  
+.floating {
+    margin: 0;
+    font-size: 1em; /* 增加了字体大小 */
+    line-height: 1.2; /* 调整了行高，使文字看起来更高 */
+    color: #ffffff;
+}
+
 .content {
     padding: 20px;
     background-color: #f4f4f4;
+}
+
+.divider {
+    width: 100%;
+    height: 2px; /* 线条的高度 */
+    background-color: white; /* 线条的颜色 */
+    margin: 20px 0; /* 线条上下的外边距 */
 }
