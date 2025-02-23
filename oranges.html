@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>赣南脐橙</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/card.css">
 </head>
 <body>
     <header>
@@ -21,12 +23,36 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="background" style="background-image: url('images/background-oranges.jpg');"></div>
-        <div class="content">
-            <h1>赣南脐橙</h1>
-            <p>这里是赣南脐橙的内容。</p>
+    <div class="card-background">
+        <div class="card-container">
+        <div class="card" onclick="location.href='page1.html'">
+            <div class="card-content">
+                <h2 class="card-title">卡片标题1</h2>
+                <p class="card-description">这是卡片的内容描述1。</p>
+            </div>
+            <div class="card-image">
+                <img src="/images/image1.jpg" alt="图片1">
+            </div>
         </div>
-    </main>
+        <div class="card" onclick="location.href='page2.html'">
+            <div class="card-content">
+                <h2 class="card-title">卡片标题2</h2>
+                <p class="card-description">这是卡片的内容描述2。</p>
+            </div>
+            <div class="card-image">
+                <img src="/images/image2.jpg" alt="图片2">
+            </div>
+        </div>
+        <div class="card" onclick="location.href='page3.html'">
+            <div class="card-content">
+                <h2 class="card-title">卡片标题3</h2>
+                <p class="card-description">这是卡片的内容描述3。</p>
+            </div>
+            <div class="card-image">
+                <img src="/images/image3.jpg" alt="图片3">
+            </div>
+        </div>
+        <!-- 可以继续添加更多卡片 -->
+    </div>
 </body>
 </html>
