@@ -1,11 +1,15 @@
 .card-background {
     background-image: url('../images/imagesbackground-oranges.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
 }
  
 .card-container {
